@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block body %}
+  <div class="row edit_div">
+        <form action="/update/{{user.id}}" method="POST">
+          <div class="form-group">
+            <input type="text" name="first_name" value="{{user.first_name}}" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" name="last_name" value="{{user.last_name}}" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" name="email" value="{{user.email}}" class="form-control">
+          </div>
+            <div class="form-group">
+            <select name="rights" id="" class="form-control">
+                <option value="" hidden>User rights</option>
+                <option value="1">All</option>
+                <option value="0">View</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">
+              Update
+            </button>
+          </div>
+        </form>
+  </div>
+{% endblock %}

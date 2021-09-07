@@ -1,0 +1,24 @@
+{% import "bootstrap/utils.html" as utils %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block body %}
+<div class="content-section">
+    <br/>
+      {% with messages = get_flashed_messages()  %}
+          {% if messages %}
+              {% for message in messages %}
+              <div class="alert alert-info" role="alert">
+                {{ message }}
+              </div>
+              {% endfor %}
+          {% endif %}
+      {% endwith %}
+        <br/>
+        <div class="login-div">
+            <h1>Login</h1>
+        <br/>
+        {{ wtf.quick_form(form) }}
+    </div>
+</div>
+{% endblock %}

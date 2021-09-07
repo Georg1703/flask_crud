@@ -1,0 +1,40 @@
+.home-div{
+     padding-top: 15%;
+     text-align: center;
+}
+
+.dashboard-div{
+     padding-top: 5%;
+     width: 80%;
+     margin: auto;
+}
+
+.content-section{
+    width: 40%;
+    margin: auto;
+    padding-top: 120px;
+}
+
+.messages {
+    width: 300px;
+}
+
+.flushes {
+    width: 200px;
+}
+
+table{
+    text-align: center;
+}
+
+.add_user_div{
+    width: 100%;
+    padding: 35px 0;
+    text-align: right;
+}
+
+.edit_div{
+    padding-top: 150px;
+    width: 30%;
+    margin: auto;
+}
